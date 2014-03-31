@@ -1,6 +1,9 @@
 <?php
 namespace OpenPayuSdk\OpenPayu\V2;
 use OpenPayuSdk\OpenPayu\OpenPayU;
+use OpenPayuSdk\OpenPayu\OpenPayU_Configuration;
+use OpenPayuSdk\OpenPayu\OpenPayU_Util;
+use OpenPayuSdk\OpenPayu\OpenPayU_Http;
 
 /**
  * OpenPayU Order module

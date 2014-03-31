@@ -67,7 +67,7 @@ class OpenPayU_HttpCurl implements OpenPayU_HttpProtocol
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, false);
         curl_setopt($ch, CURLOPT_HEADER, false);
         curl_setopt($ch, CURLOPT_HTTPHEADER, $header);
-        curl_setopt($ch, CURLOPT_HEADERFUNCTION, 'OpenPayU_HttpCurl::readHeader');
+        curl_setopt($ch, CURLOPT_HEADERFUNCTION, 'OpenPayuSdk\OpenPayu\OpenPayU_HttpCurl::readHeader');
         curl_setopt($ch, CURLOPT_POSTFIELDS, (OpenPayU_Configuration::getApiVersion() < 2) ? 'DOCUMENT=' . urlencode($data) : $data);
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
         curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);

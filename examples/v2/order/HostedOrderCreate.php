@@ -10,11 +10,14 @@
  * http://twitter.com/openpayu
  *
  */
-
     require_once realpath(dirname(__FILE__)) . '/../../../lib/openpayu.php';
+    require_once realpath(dirname(__FILE__)) . '/../../config.php';
+
+    use OpenPayuSdk\OpenPayu\V2\OpenPayU_Order;
+    use OpenPayuSdk\OpenPayu\OpenPayU_Configuration;
 
     OpenPayU_Configuration::setApiVersion(2);
-    require_once realpath(dirname(__FILE__)) . '/../../config.php';
+
 
     $order = array();
 

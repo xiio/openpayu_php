@@ -5,6 +5,9 @@
  * @copyright  Copyright (c) 2013 PayU
  */
 namespace OpenPayuSdk\OpenPayu;
+use OpenPayuSdk\OpenPayu\OpenPayU_Configuration;
+use OpenPayuSdk\OpenPayu\OpenPayU_HttpCurl;
+
 
 class OpenPayU_Http
 {

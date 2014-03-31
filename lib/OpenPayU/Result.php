@@ -9,6 +9,7 @@
 	http://twitter.com/openpayu
 */
 namespace OpenPayuSdk\OpenPayu;
+use OpenPayuSdk\OpenPayu\OpenPayU_Util;
 
 class OpenPayU_Result
 {
