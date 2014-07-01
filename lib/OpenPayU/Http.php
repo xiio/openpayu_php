@@ -109,7 +109,11 @@ class OpenPayU_Http
             case 404:
                 throw new OpenPayU_Exception_Network('Data indicated in the request is not available in the PayU system.');
                 break;
-
+            
+             case 405:
+		        throw new OpenPayU_Exception('Method not allowed');
+		        break;
+            
             case 408:
                 throw new OpenPayU_Exception_ServerError('Request timeout', $statusCode);
                 break;
